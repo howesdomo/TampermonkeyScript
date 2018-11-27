@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         虾米音乐 - 歌词大只字 - VN7
+// @name         虾米音乐_VN7_歌词模式_缩放150%
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  虾米音乐歌词变大
 // @author       HowesDOMO
 // @match        *://www.xiami.com/play?*
@@ -33,7 +33,7 @@
 
         // 修改布局 凸显歌词
         var width_Css_Min = { "width" : "0px" };
-        var width_Css = { "width" : "800px" };
+        var width_Css = { "width" : "1000px" };
 
         var J_albumCover = $("#J_albumCover");
         J_albumCover.css("display", "none");

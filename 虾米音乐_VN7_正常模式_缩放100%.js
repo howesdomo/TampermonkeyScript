@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         虾米音乐-我的皮肤
+// @name         虾米音乐_VN7_正常模式
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  虾米音乐歌词变大
 // @author       HowesDOMO
 // @match        *://www.xiami.com/play?*

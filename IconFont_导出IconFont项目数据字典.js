@@ -4,7 +4,7 @@
 // @version      1.2
 // @description  用于编写数据字典, 便于在XAML中阅读
 // @author       HowesDOMO
-// @match        https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1936991&keyword=&project_type=&page=
+// @match        https://www.iconfont.cn/manage/index?manage_type=*
 // @require      https://cdn.bootcss.com/jquery/1.7.1/jquery.min.js
 // @require      https://cdn.bootcss.com/clipboard.js/1.5.16/clipboard.min.js
 // @grant        none
@@ -50,8 +50,8 @@
 
 		// Step 1 -- 向页面添加导出按钮 / 拷贝导出内容按钮(隐藏)
 		var btnExportDict = "<input id='btnExportDict' type='button' value='导出数据字典(C#)' />";
-		var lblCopyContent = "<input id='lblCopyContent' type='text' />";
-		var btnClipboard = "<button id='btnClipboard' data-clipboard-target='#lblCopyContent'>Clipboard</button>";
+		var lblCopyContent = "<input id='lblCopyContent' type='text' style='width:5px' />";
+		var btnClipboard = "<button id='btnClipboard' data-clipboard-target='#lblCopyContent' style='display:none'>Clipboard</button>";
 
 		// $("div .block-radius-btn-group clearfix")
 		var matchDiv = $("div .block-radius-btn-group.clearfix");
@@ -97,9 +97,9 @@
 			});
 			console.log(sb);
 			console.log('已完成计算');
-
 			$("#lblCopyContent").val(sb);
 			$("#btnClipboard").trigger("click");
+            alert("已拷贝到系统粘贴板");
 		});
 	};
 })();

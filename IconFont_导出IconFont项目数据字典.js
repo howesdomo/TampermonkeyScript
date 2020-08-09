@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         导出IconFont项目数据字典
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  用于编写数据字典, 便于在XAML中阅读
 // @author       HowesDOMO
 // @match        https://www.iconfont.cn/manage/index?manage_type=*
@@ -92,7 +92,7 @@
 				var code = v.children[2].innerText;
 				// console.log(name);
 				// console.log(code);
-				var total = 'd.Add("' + name + '", "' + code + '");';
+				var total = '{"' + name + '", "' + code + '"}, ';
 				sb = sb + "\r\n" + total;
 			});
 			console.log(sb);

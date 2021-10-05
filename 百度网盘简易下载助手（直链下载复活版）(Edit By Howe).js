@@ -38,6 +38,7 @@
 // @connect      59.110.225.22
 // @connect      59.110.226.3
 // @connect      baidu.com
+// @connect      192.168.1.3
 // ==/UserScript==
 
 (function () {
